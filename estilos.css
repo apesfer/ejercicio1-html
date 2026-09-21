@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #243447;
+    background: #f4f7fb;
+}
+
+img {
+    width: 10%;
+    height: auto;
+    display: block;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main,
+section,
+article {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: #1769aa;
+}
+
+a {
+    color: #1769aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto-imagen {
+    width: 105px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.tabla-productos td {
+    vertical-align: middle;
+}
+
+button,
+input,
+textarea,
+select {
+    padding: 0.6rem 0.8rem;
+    font: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    color: #fff;
+    background: #1769aa;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #125486;
+}
+
+.formulario {
+    width: 45%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.formulario form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-mensaje,
+.formulario button {
+    grid-column: 1 / -1;
+}
+
+.campo textarea {
+    width: 100%;
+    min-height: 6rem;
+}
+
+.formulario button {
+    justify-self: start;
+}
+
+@media (max-width: 700px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .formulario form {
+        grid-template-columns: 1fr;
+    }
+}
